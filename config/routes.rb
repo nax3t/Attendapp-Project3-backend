@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :attendees, except: [:new, :edit]
   resources :sessions, only: [:destroy]
 
   post "login" => "sessions#create", :as => "login"
