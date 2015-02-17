@@ -5,7 +5,7 @@ class AttendancesController < ApplicationController
   # GET /attendances.json
   def index
     @attendances = Attendance.all
-
+    @attendances = @attendances.order("created_at desc")
     render json: @attendances
   end
 
