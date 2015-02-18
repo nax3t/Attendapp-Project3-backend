@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :courses, except: [:new, :edit]
   resources :attendances, except: [:new, :edit]
   resources :sessions, only: [:destroy]
 

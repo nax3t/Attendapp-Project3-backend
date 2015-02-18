@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 	has_secure_password
-	has_many :attendances
+	has_many :courses
+	has_many :attendances, through: :courses
 	validates :username, uniqueness: true, presence: true
 	
 	def self.authenticate username, password
