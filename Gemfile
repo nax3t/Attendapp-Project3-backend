@@ -18,6 +18,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'rspec-rails', '~> 3.0'
+
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
