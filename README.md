@@ -3,5 +3,5 @@ Attendapp is a native iOS and Android app that allows users to sign in to an eve
 
 This app utilizes a Rails API for the back-end.
 
-Database
+Database:
 - PostgreSQL
